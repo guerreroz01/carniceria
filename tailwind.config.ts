@@ -1,6 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  variants: {
+    extends: {
+      backdropFilter: ["responsive"], // Asegúrate de que las variantes de filtro de fondo estén habilitadas
+    },
+  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,13 +13,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        bg: "#080f0f",
+        active: "#10CEFE",
+        bgs: "#232830",
+        white: "#F8FCFD",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };
 export default config;
