@@ -11,21 +11,25 @@ function Hero() {
           src={heroImage}
           alt="hero image"
           style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          className="transition ease-in-out"
         />
       </div>
       <div className="blur-vignette absolute top-0 left-0 right-0 bottom-0 -z-10"></div>
-      <div className="max-w-lg px-8 py-10">
-        <h1 className="text-8xl">Video simplified</h1>
-        <p>Everithing you need to make, manage, and share brillant videos.</p>
+      <div className="max-w-lg px-8 py-10 flex flex-col gap-4">
+        <h1 className="text-8xl">Especialistas en carnes</h1>
+        <p>
+          Tenemos una selección de los mejores cortes de carne para los
+          paladares más exigentes.
+        </p>
         <div className="flex justify-around gap-2 py-4">
           <CustomButton
-            title="See plans"
+            title="Mira nuestros planes"
             bg="bg-bg"
             arrowBg="bg-bgs"
             href="/"
           />
           <CustomButton
-            title="Join for free"
+            title="Únete gratis"
             bg="bg-bg"
             arrowBg="bg-bgs"
             href="/"
@@ -34,7 +38,7 @@ function Hero() {
       </div>
       <div className="self-end ml-auto  px-10">
         <p className="px-10 py-6 backdrop-blur-sm bg-white/30 rounded-t-2xl font-bold text-gray-50">
-          287 millions creatives, entrepreneurs, and bussiness trust vimeo
+          358 clientes confian en nosotros y el número sigue creciendo!
         </p>
       </div>
     </section>

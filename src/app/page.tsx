@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import CardContainer from "@/components/CardContainer";
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         href="/promo"
       />
       <Hero />
+      <CardContainer />
       <div className="h-64"></div>
     </>
   );
